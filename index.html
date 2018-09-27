@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0, shrink-to-fit=yes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Portofolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            position: relative;
+            margin: 30px 0 60px;
+        }
+        h2::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            margin: 0 auto;
+            height: 3px;
+            background: #8fbc54;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+        }
+        .col-center {
+            margin: 0 auto;
+            float: none !important;
+        }
+        .carousel {
+            margin: 10px auto;
+            padding: 0 10px;
+        }
+        .carousel .item {
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            min-height: 290px;
+        }
+        .carousel .item .img-box {
+            width: 135px;
+            height: 135px;
+            margin: 0 auto;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+        .carousel .img-box img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
+        }
+        .carousel .testimonial {
+            padding: 100px 0 10px;
+        }
+        .carousel .overview {	
+            font-style: italic;
+        }
+        .carousel .overview b {
+            text-transform: uppercase;
+            color: #7AA641;
+        }
+        .carousel .carousel-control {
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            top: 50%;
+            background: none;
+        }
+        .carousel-control i {
+            font-size: 68px;
+            line-height: 42px;
+            position: absolute;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+        }
+        .carousel .carousel-indicators {
+            bottom: -40px;
+        }
+        .carousel-indicators li, .carousel-indicators li.active {
+            width: 10px;
+            height: 10px;
+            margin: 1px 3px;
+            border-radius: 50%;
+        }
+        .carousel-indicators li {	
+            background: #999;
+            border-color: transparent;
+            box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+        }
+        .carousel-indicators li.active {	
+            background: #555;		
+            box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+        }
+        
+        .opaque-navbar {
+            background-color: rgba(0,0,0,0.5);
+        /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+            height: 60px;
+            border-bottom: 0px;
+            transition: background-color .5s ease 0s;
+        }
+
+        .opaque-navbar.opaque {
+            background-color: black;
+            height: 60px;
+            transition: background-color .5s ease 0s;
+        }
+
+
+        @media (max-width: 992px) {
+            .opaque-navbar {
+                background-color: black;
+                height: 60px;
+                transition: background-color .5s ease 0s;
+            }
+
+        }
+        .parallax1 {
+            /* The image used */
+            background-image: url("img/par1.jpg");
+
+            /* Set a specific height */
+            height: 600px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        
+        .parallax2 {
+            /* The image used */
+            background-image: url("img/gunung.png");
+
+            /* Set a specific height */
+            height: 600px;
+        
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+       
+        .parallax3 {
+            /* The image used */
+            background-image: url("img/marvel.jpg");
+
+            /* Set a specific height */
+            height: 600px;
+            
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        
+     </style>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-inverse navbar-expand-lg fixed-top scrolling-navbar opaque-navbar">
+            <a class="navbar-brand" href="#">Me.io</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/ZulfikarAkbar">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/zulfikar-akbar-987253129/">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-2" data-slide-to="0"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="d-block w-100" src="img/back2.jpg" alt="First slide" style="height: 100%;">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            
+                            <div class="carousel-caption">
+                                
+                                <img src="img/pas.jpg" alt="x" width="20%" height="20%" style="border-radius: 500px;">
+                                
+                                <h3 class="h3-responsive">
+                                    Hi, My name is Zulfikar
+                                </h3>
+                                <p>Front-end Developer</p>
+                                <p>"Keep learn new object"</p>
+                                <p>Male | Jakarta, 30 March 1998</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!--/.Carousel Wrapper-->
+    </section>
+    <!--Carousel Wrapper-->
+    
+
+
+    <div class="section" style="background-color: lightcyan; padding: 50px;">
+        <div class="container">
+            <h1 style="text-align: center;">
+                <i class="fa fa-graduation-cap"></i>
+                Education
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-4">
+                    SMP Negeri 178 Jakarta
+                    <p>(2010 - 2013)</p>
+                </div>
+                <div class="col-4">
+                    SMA Negeri 86 Jakarta
+                    <p>(2013 - 2016)</p>
+                </div>
+                <div class="col-4">
+                    Universitas Negeri Jakarta
+                    <p>Computer Science (2016 - Present)</p>
+                </div>
+            </div>
+            
+            <div class="row" style="text-align: center;">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    LBPP LIA Bintaro
+                    <p>English Course (2013 - 2014)
+                    </p>
+                    
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax1">
+        <div class="section" style="padding: 50px">
+            <br><br><br><br><br>
+        <div class="container">
+            <h1 style="text-align: center;">
+                <i class="fa fa-sitemap"></i>
+                Organization Experience
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-4">
+                    SMP Negeri 178 Jakarta
+                    <p>(Scout)</p>
+                </div>
+                <div class="col-4">
+                    SMA Negeri 86 Jakarta
+                    <p>(Scout, Islamic spirituality)
+                    </p>
+                </div>
+                <div class="col-4">
+                    Universitas Negeri Jakarta
+                    <p>(Member and Chairman of DEFAULT Web development division)</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    
+    <div class="section"  style="background-color: lightcyan; padding: 50px;">
+        <div class="container">
+            <h1 style="text-align: center;">
+                <i class="fa fa-sitemap"></i>
+                Committe
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-4"></div>
+                <div class="col-4">
+                     BINER 3.0
+                    <p>(Job as Staff)</p>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="parallax2">
+        <br><br><br><br><br>
+        <div class="section"style="background-color: padding: 50px">
+            <div class="container">
+                <h1 style="text-align: center;">
+                    <i class="fa fa-certificate"></i>
+                    Certificate
+                </h1>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row" style="text-align: center;">
+                    <div class="col-3">
+                        Android Studio Workshop
+                        <p>(18 February 2017)</p>
+                    </div>
+                    <div class="col-3">
+                        BINER 3.0
+                        <p>(03 March 2018)</p>
+                    </div>
+                    <div class="col-3">
+                        Test Of English Proficiency
+                        <p>(12 October 2016) - (score: 447)
+                    </div>
+                    <div class="col-3">
+                        Junior Programmer Logbook
+                        <p>(25 - 27 July 2017)</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" style="padding: 50px;">
+        <div class="container">
+            <h1 style="text-align: center;">
+                <i class="fa fa-gift"></i>
+                Volunteer
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    Front-end web Back-trainer
+                    <p>(03 March 2018)</p>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="parallax3">
+        <div class="section" style="background-color: padding= 50px; color: white;">
+            <br><br><br><br><br><br>
+        <div class="container">
+            <h1 style="text-align: center;">
+                <i class="fa fa-paper-plane"></i>
+                Project
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-6">
+                    Lost & Found Website
+                    <p>(DEFAULT)</p>
+                </div>
+                <div class="col-6">
+                    Sales Desktop Application
+                    <p>(Junior Programmer Certification)</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    <div class="section" style="background-color: lightcyan; padding: 50px; ">
+        <div class="container">
+            <h1 style="text-align: center;">
+                <i class="fa fa-paw"></i>
+                Skills
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <div class="col-2"></div>
+                <div class="col-8"><img src="img/skill.png" alt="x" width="100%" height="100%"></div>
+                <div class="col-2"></div>
+                
+            </div>
+            <br>
+            <div class="row" style="text-align: center;">
+                <div class="col-3"><img src="img/python.png" alt="x" height="100%" width="100%"></div>
+                <div class="col-3"><img src="img/rust.png" alt="x" height="100%" width="100%"></div>
+                <div class="col-3"><img src="img/java.png" alt="x" height="100%" width="100%"></div>
+                <div class="col-3"><img src="img/kali.jpg" alt="x" height="90%" width="90%"></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i>Bintaro Sektor IX, 15413, ID</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i>zulfikar.akbar78@gmail.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 62 8780 8085 169</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <h6 class="text-uppercase font-weight-bold">Maps</h6>
+                    <hr class="blue accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <P>
+                        <div class="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4854.
+                                583942078132!2d106.73093888197519!3d-6.265059286350373!2m3!1f0!2f0!3f0!3m
+                                2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f07c8d26c9b9%3A0xc5a7340383b971c8!2sPKN+STAN
+                                +Student+Center!5e0!3m2!1sid!2sid!4v1529327342935" width="100%">
+                            </iframe>
+                        </div>
+                    </P>
+                </div>
+            </div>
+        </div>
+        <br><br>
+         <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="#">Zulfikar Akbar</a>
+        </div>
+    </footer>
+    
+
+    
+
+
+
+
+  
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        // Animations initialization
+        new WOW().init();
+        /*
+     **********************************************************
+     * OPAQUE NAVBAR SCRIPT
+     **********************************************************
+     */
+   
+     // Toggle tranparent navbar when the user scrolls the page
+   
+     $(window).scroll(function() {
+       if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+       {
+           $('.opaque-navbar').addClass('opaque');
+       } else {
+           $('.opaque-navbar').removeClass('opaque');
+       }
+   });
+    </script>
+</body>
+
+</html>
